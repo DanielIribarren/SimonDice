@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="game.js"></script>
+</body>
+</html>
+
+<body>
+    <!-- Main Menu -->
+    <div id="main-menu" class="screen">
+        <h1>Simon Says</h1>
+        <div id="total-victories">Total Victories: <span id="victory-count">0</span></div>
+        <div class="player-form">
+            <input type="text" id="player-name" placeholder="Enter your name" required>
+            <button id="start-game">Start game</button>
+        </div>
+        <div class="high-scores">
+            <h2>High Scores</h2>
+            <table id="scores-table">
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody id="scores-body"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen hidden">
+        <div class="game-info">
+            <span id="current-player"></span>
+            <span id="current-score">Score: 0</span>
+            <span id="best-score">Best: 0</span>
+        </div>
+        
+        <div class="game-board">
+            <div class="button-container">
+                <div class="game-button" id="green" data-color="green"></div>
+                <div class="game-button" id="red" data-color="red"></div>
+                <div class="game-button" id="yellow" data-color="yellow"></div>
+                <div class="game-button" id="blue" data-color="blue"></div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="start-sequence">Start</button>
+            <button id="return-menu">Main Menu</button>
+        </div>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="game-over" class="screen hidden">
+        <h2>Game Over!</h2>
+        <p>Final Score: <span id="final-score">0</span></p>
+        <button id="play-again">Play Again</button>
+        <button id="return-menu-end">Return to Menu</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
