@@ -43,15 +43,15 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #4CAF50;
+    background-color: #0063c6;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 60px;
     margin: 5px;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #002751;
 }
 
 .high-scores {
@@ -63,6 +63,7 @@ table {
     max-width: 400px;
     margin: 20px auto;
     border-collapse: collapse;
+
 }
 
 th, td {
@@ -74,7 +75,7 @@ th, td {
     margin: 20px auto;
     width: 100%;
     max-width: 400px;
-    aspect-ratio: 1;
+    aspect-ratio: 2;
 }
 
 .button-container {
@@ -87,7 +88,7 @@ th, td {
 }
 
 .game-button {
-    border-radius: 15px;
+    border-radius: 100px;
     cursor: pointer;
     transition: filter 0.3s ease;
 }
@@ -110,4 +111,38 @@ th, td {
 
 .game-button.active {
     filter: brightness(1.5);
+}
+
+/* Game Info */
+.game-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .game-board {
+        max-width: 300px;
+    }
+
+    .button-container {
+        gap: 5px;
+    }
+
+    input[type="text"] {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .game-board {
+        max-width: 250px;
+    }
+
+    .game-info {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
