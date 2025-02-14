@@ -11,8 +11,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #1a1a1a;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }
 
 .screen {
@@ -35,8 +35,8 @@ input[type="text"] {
     padding: 10px;
     font-size: 16px;
     margin-right: 10px;
-    border-radius: 5px;
-    border: none;
+    border-radius: 20px;
+    border: 2px solid black
 }
 
 button {
@@ -46,7 +46,7 @@ button {
     background-color: #0063c6;
     color: white;
     border: none;
-    border-radius: 60px;
+    border-radius: 20px;
     margin: 5px;
 }
 
@@ -68,7 +68,7 @@ table {
 
 th, td {
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #0c0c0c;
     text-align: center;
 }
 .game-board {
