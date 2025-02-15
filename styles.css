@@ -88,24 +88,28 @@ th, td {
 }
 
 .game-button {
-    border-radius: 100px;
+    
     cursor: pointer;
     transition: filter 0.3s ease;
 }
 
 #green {
+    border-top-left-radius: 100%;
     background-color: #00a74a;
 }
 
 #red {
+    border-top-right-radius: 100%;
     background-color: #9f0f17;
 }
 
 #yellow {
+    border-bottom-left-radius: 100%;
     background-color: #cca707;
 }
 
 #blue {
+    border-bottom-right-radius: 100%;
     background-color: #094a8f;
 }
 
@@ -117,7 +121,10 @@ th, td {
 .game-info {
     display: flex;
     justify-content: space-around;
+    padding: 5px;
     margin-bottom: 20px;
+    border: 2px solid #0063c6;
+    border-radius: 20px;
 }
 
 /* Responsive Design */
